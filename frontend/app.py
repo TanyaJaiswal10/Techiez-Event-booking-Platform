@@ -5,7 +5,7 @@ from admin_ui import admin_dashboard, organizer_dashboard
 from entry_ui import entry_dashboard
 from support_ui import support_dashboard
 
-st.set_page_config(page_title="Ticket Booking Platform", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Eventora - Ticket Booking Platform", layout="wide", initial_sidebar_state="expanded")
 
 # Custom CSS for "Wowed" design
 st.markdown("""

@@ -2,7 +2,7 @@ import streamlit as st
 from api_client import login, signup
 
 def login_section():
-    st.header("Login")
+    st.header("Eventora - Login")
     email = st.text_input("Email", key="login_email")
     password = st.text_input("Password", type="password", key="login_pass")
     if st.button("Login"):
@@ -17,7 +17,7 @@ def login_section():
             st.error(res.get("detail", "Login failed"))
 
 def signup_section():
-    st.header("Register")
+    st.header("Eventora - Register")
     name = st.text_input("Full Name")
     email = st.text_input("Email", key="signup_email")
     password = st.text_input("Password", type="password", key="signup_pass")

@@ -60,4 +60,4 @@ def approve_refund(refund_id: int, approval: RefundApproval, db: Session = Depen
     req.resolved_by = current_user.id
     req.resolved_at = datetime.now()
     db.commit()
-    return {"message": "Refund " + ("approved" if approve else "rejected")}
+    return {"message": "Refund " + ("approved" if approval.approve else "rejected")}
